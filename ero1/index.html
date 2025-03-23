@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Server Protection Monitoring System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 2rem 0;
+        }
+
+        /* Custom styles for a modern look */
+        .jumbotron {
+            background-color: #007bff;
+            color: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 0.3rem;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+
+        .card-header {
+            background-color: #fff;
+            border-bottom: none;
+            font-weight: bold;
+            padding: 1rem;
+        }
+
+        .card-body {
+            padding: 1rem;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        /* Documentation and Downloads Section */
+        #downloads {
+            background-color: #e9ecef;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        #downloads h2 {
+            margin-bottom: 1.5rem;
+            color: #007bff;
+        }
+
+        .download-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 0.25rem;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+        }
+
+        .download-link:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+        }
+
+        /* Additional Styles for New Sections */
+        #objectives,
+        #how-it-works,
+        #ai-algorithms {
+            padding: 2rem 0;
+        }
+
+        #objectives h2,
+        #how-it-works h2,
+        #ai-algorithms h2 {
+            color: #007bff;
+            margin-bottom: 1.5rem;
+        }
+
+        #developed-by {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #f0f0f0;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>Real-Time Server Protection Monitoring System</h1>
+        <p class="lead">An AI-Driven Approach to Cybersecurity</p>
+<p><i>Telone Center For Learning : 2025</i></p>    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <h2 class="card-header">Executive Summary</h2>
+                    <div class="card-body">
+                        <p>The escalating sophistication of cyberattacks targeting server infrastructure poses critical risks
+                            to data integrity and operational continuity. This project addresses the urgent need for proactive
+                            threat detection by proposing an AI-driven monitoring system integrating real-time behavioral
+                            analysis and ensemble machine learning algorithms. The solution combines network traffic
+                            pattern recognition, anomaly detection, and predictive threat scoring to identify vulnerabilities
+                            before exploitation, leveraging open-source tools like ELK Stack and Suricata for cost-
+                            effective scalability.</p>
+                        <p>Methodologically, the system will be validated through simulated attack
+                            scenarios (e.g., SQL injection, DDoS) and benchmarked against industry standards like
+                            MITRE ATT&CK frameworks, with performance metrics including detection accuracy
+                            (>90%), false positive rates (<10%), and response latency (<5 seconds). Expected outcomes
+                            include a minimum 40% reduction in breach response time and a minimum 30% improvement
+                            in threat prioritization efficiency, supported by comparative analysis of algorithmic
+                            performance (e.g., Random Forest vs. XGBoost) and case studies from hybrid cloud
+                            environments. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <h2 class="card-header">Project Overview</h2>
+                    <div class="card-body">
+                        <p><b>Purpose:</b> To create a monitoring tool that alerts teams to suspicious activity before
+                            hackers can cause harm.</p>
+                        <p><b>Key Issues:</b></p>
+                        <ul>
+                            <li>Speed: Current systems often detect threats too late.</li>
+                            <li>Cost: Many solutions are expensive or require specialized expertise.</li>
+                            <li>Complexity: Small businesses or teams lack the tools to stay ahead of threats.</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card">
+                    <h2 class="card-header">Methodology</h2>
+                    <div class="card-body">
+                        <p>This project employs a structured, iterative approach to design and validate an AI-driven cyber
+                            threat monitoring system for SMEs. The process begins with data collection and
+                            preparation, where labeled datasets of server attack patterns will be curated from open-source
+                            repositories and synthetic simulations.</p>
+                        <p>The system integrates open-source tools like ELK Stack and
+                            Suricata to visualize threats and automate alerts via a user-friendly dashboard. Testing
+                            involves simulated attack scenarios in hybrid cloud environments to evaluate detection
+                            accuracy, response latency, and scalability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="objectives">
+            <div class="container">
+                <h2>System Objectives</h2>
+                <ul>
+                    <li>Develop a machine learning model that achieves at least 90% detection accuracy for common
+                        server-based threats (e.g., SQL injection, ransomware) within 6 months, validated through
+                        simulated attack scenarios.</li>
+                    <li>Reduce breach response time by at least 40% compared to traditional systems by integrating
+                        automated alert prioritization and incident response workflows.</li>
+                    <li>Ensure system affordability by leveraging open-source tools (e.g., ELK Stack, Suricata) and
+                        cloud-based infrastructure, with deployment costs &lt;20% of commercial alternatives.</li>
+                    <li>Validate scalability through case studies in hybrid cloud environments, achieving &lt;2-second
+                        latency in threat detection across distributed server networks.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <div class="container">
+                <h2>How the System Works</h2>
+                <p>The system operates through continuous monitoring of server activity, network traffic, and system logs.
+                    Here's a breakdown:</p>
+                <ol>
+                    <li><b>Data Collection:</b> Collects data from various sources including server logs, network traffic, and
+                        system events.</li>
+                    <li><b>Preprocessing:</b> Cleans and transforms the collected data into a format suitable for machine
+                        learning models.</li>
+                    <li><b>Real-time Analysis:</b> Employs AI algorithms to analyze patterns and detect anomalies that
+                        indicate potential threats.</li>
+                    <li><b>Threat Prioritization:</b> Prioritizes alerts based on severity and potential impact, ensuring
+                        critical issues are addressed promptly.</li>
+                    <li><b>Automated Response:</b> Integrates with incident response systems to trigger automated actions
+                        such as isolating infected systems or blocking malicious traffic.</li>
+                    <li><b>Visualization:</b> Provides a user-friendly dashboard for visualizing threats and monitoring system
+                        performance.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="ai-algorithms">
+            <div class="container">
+                <h2>AI Algorithms Used</h2>
+                <p>The system utilizes ensemble machine learning algorithms to enhance threat detection accuracy:</p>
+
+                <h3>Random Forest</h3>
+                <p><b>Description:</b> An ensemble learning method that operates by constructing a multitude of decision
+                    trees at training time and outputting the class that is the mode of the classes (classification) or
+                    mean prediction (regression) of the individual trees.</p>
+                <p><b>Use Case:</b> Identifying patterns in network traffic data and classifying potential threats based on
+                    multiple decision paths.</p>
+
+                <h3>XGBoost</h3>
+                <p><b>Description:</b> A gradient boosting framework that sequentially combines weak learners (decision
+                    trees) to create a strong learner. XGBoost is known for its scalability and ability to handle large
+                    datasets with complex dependencies.</p>
+                <p><b>Use Case:</b> Detecting anomalies in system logs and predicting the likelihood of future attacks based
+                    on historical data.</p>
+
+                <h3>Ensemble Approach</h3>
+                <p><b>Combining Random Forest and XGBoost:</b> By combining these algorithms, the system leverages the
+                    strengths of both, improving overall detection accuracy and reducing false positive rates. Random
+                    Forest provides robust classification, while XGBoost enhances predictive capabilities.</p>
+            </div>
+        </section>
+    </div>
+
+    <section id="downloads">
+        <div class="container">
+            <h2>Download Project Resources</h2>
+            <a href="proposal.pdf" class="download-link">Documentation (PDF)</a> <a href="proposal.docx" class="download-link">Documentation (DOCX)</a>
+            <a onclick="alert('Either the feature is still undergoing scheduled maintenance or is not uploaded. Contact Telone Center For Learning.');" class="download-link">Video Presentation</a>
+            <a  onclick="alert('Either the feature is still undergoing scheduled maintenance or is not uploaded. Contact Telone Center For Learning.');"  class="download-link">AI Model</a>
+            <a  onclick="alert('Either the feature is still undergoing scheduled maintenance or is not uploaded. Contact Telone Center For Learning.');"  class="download-link">Source Code (GitHub)</a>
+        </div>
+    </section>
+
+    <div id="developed-by">
+        Developed in 2025 at Telone Center for Learning
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

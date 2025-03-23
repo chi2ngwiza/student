@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droom Dazlean</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('background.jpg') center/cover fixed;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: rgba(255,255,255,0.9);
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 300px;
+            max-width: 100%;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin:auto;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            text-align: center;
+            margin: 0 0 1rem;
+        }
+
+        label {
+            font-size: 0.8rem;
+            color: #666;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 0.6rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        input {
+            border: 1px solid #ddd;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            background: var(--accent);
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+        }
+
+        .note {
+            font-size: 0.7rem;
+            color: #999;
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+<center>
+        <img src="logo.png" alt="Droom Dazlean" class="logo">
+</center>
+        <h1>Droom Dazlean</h1>
+        <form id="dd-form" onsubmit="redirect(event)">
+            <label>DD-ID</label>
+            <input type="text" id="dd-id" placeholder="Enter your DD ID" style='width:95%;' required>
+            <button type="submit">Access</button>
+        </form>
+        <p class="note">Secure access portal</p>
+<p style="text-align:center;">Access your files here !</p>
+    </div>
+
+    <script>
+        function redirect(e) {
+            e.preventDefault();
+            const id = document.getElementById('dd-id').value.trim();
+            if (!id || !id.toUpperCase().startsWith('ERO')) {
+                alert('Invalid ID. Contact +263 78 770 2386 for assistance if you forgot your DD ID');
+                return;
+            }
+            window.location.href = window.location.href + `/dazlean/${id}/`;
+        }
+    </script>
+</body>
+</html>
